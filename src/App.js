@@ -1,23 +1,9 @@
-import React, { Component } from 'react';
-import './App.css';
-import MessageList from './compomrmts/MessageList'
-import SendMessageForm from "./compomrmts/SendMessageForm";
-import RoomList from "./compomrmts/RoomList";
-import NewRoomForm from "./compomrmts/NewRoomForm";
-
-
+import React, { Component } from 'react'
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <RoomList />
-        <MessageList />
-        <SendMessageForm />
-        <NewRoomForm />
-      </div>
-    );
+    return <h1>Chatly</h1>
   }
 }
 
-export default App;
+export default App
