@@ -1,10 +1,10 @@
-import React form 'react';
+import React from 'react';
 
 class UsernameForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            username: ''
+            username: '',
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
@@ -22,12 +22,14 @@ class UsernameForm extends React.Component {
     }
 
     render () {
-        return <div>
+        return (
+        <div>
             <form onSubmit={this.onSubmit}>
-                <input type="text" placeholder="What is your username" onChange={this.onChange}/>
-                <input type="submut" />
+                <input type="text" placeholder="What is your username" onChange={this.onChange} />
+                <input type="submit" />
             </form>
         </div>
+        ) 
     }
 }
 
