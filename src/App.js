@@ -20,7 +20,7 @@ class App extends Component {
     })
   }
   render() {
-    return <UsernameForm handlesumbit ={this.onUsernameSubmitted}/>
+    return <UsernameForm onsumbit ={this.onUsernameSubmitted}/>
   }
 }
 

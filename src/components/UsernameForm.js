@@ -11,8 +11,8 @@ class UsernameForm extends Component {
     }
 
     onSubmit(e) {
-        this.props.onSubmit(this.state.username)
         e.preventDefault()
+        this.props.onSubmit(this.state.username)
     }
 
     onChange(e) {

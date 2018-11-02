@@ -21,7 +21,7 @@ app.post('/users', (req, res) => {
   chatkit
     .createUser({
       name: username,
-      id: username
+      id: username,
     })
     .then(() => res.sendStatus(201))
     .catch(error => {
